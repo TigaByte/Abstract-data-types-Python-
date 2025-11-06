@@ -14,13 +14,13 @@ class Stack:
         if not self.isEmpty():
             return self.items.pop()
         else:
-            raise IndexError("Stack is empty, there is not object left to pop")
+            raise IndexError("Stack is empty")
 
     def peek(self):
         if not self.isEmpty():
             return self.items[-1]
         else:
-            raise IndexError("Stack is empty, there is not object left to peek")
+            raise IndexError("Stack is empty")
 
     def isEmpty(self):
         return len(self.items) == 0
